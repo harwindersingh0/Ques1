@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawesome - Pet Services</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+    body {
+            background-image: url('https://i.pinimg.com/originals/78/a2/70/78a270652c7a577da448d5e1b14a731a.jpg');
+            background-size: cover;
+            background-position: center;
+            /* Additional styles if needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pawesome</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pet-services.html">Pet Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="grooming-services">
+            <h2>Grooming Services</h2>
+            <div class="grid-container">
+                <!-- Bathing Service -->
+                <div class="grid-item">
+                    <h3>1. Bathing</h3>
+                    <img src="bathing.jpeg" alt="Bathing Image">
+                    <p>This service involves cleansing your pet using appropriate shampoos and conditioners suitable for their skin and coat type. It typically includes a thorough rinse and blow-dry, leaving your pet feeling fresh and clean.</p>
+                </div>
+        
+                <!-- Haircut & Styling Service -->
+                <div class="grid-item">
+                    <h3>2. Haircut & Styling</h3>
+                    <img src="Haircut & Styling Image.jpeg" alt="Haircut & Styling Image">
+                    <p>Professional groomers trim, shape, or style your pet's coat according to your preferences. They use specialized techniques and tools to ensure a neat and aesthetically pleasing appearance tailored to your pet's breed or desired style.</p>
+                </div>
+        
+                <!-- Nail Trimming Service -->
+                <div class="grid-item">
+                    <h3>3. Nail Trimming</h3>
+                    <img src="Nail Trimming Image.jpeg" alt="Nail Trimming Image">
+                    <p>Groomers carefully trim your pet's nails to an appropriate length, preventing overgrowth, discomfort, or potential injury. They might also file the nails to smooth any rough edges, promoting healthy foot posture and preventing scratching.</p>
+                </div>
+        
+                <!-- Teeth Cleaning Service -->
+                <div class="grid-item">
+                    <h3>4. Teeth Cleaning</h3>
+                    <img src="teeth Cleaning Image.jpeg" alt="Teeth Cleaning Image">
+                    <p>Dental hygiene services involve cleaning your pet's teeth and maintaining their oral health. Groomers might use pet-friendly toothpaste, brushes, or other oral care tools to remove plaque and maintain healthy gums, contributing to your pet's overall well-being.</p>
+                </div>
+        
+                <!-- De-shedding Treatment Service -->
+                <div class="grid-item">
+                    <h3>5. De-shedding Treatment</h3>
+                    <img src="De-shedding Treatment Image.jpeg" alt="De-shedding Treatment Image">
+                    <p>This treatment aims to reduce excessive shedding in pets. Groomers use specialized tools and products to remove loose fur, minimizing shedding and leaving the coat healthier and more manageable. It's particularly beneficial for breeds prone to shedding.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="pets-hotel">
+            <h2>Pets Hotel</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'room-types')">Room Types</button>
+                <button class="tablinks" onclick="openTab(event, 'amenities')">Amenities</button>
+            </div>
+        
+            <div id="room-types" class="tabcontent">
+                <h3>Room Types</h3>
+                <p>Our hotel offers various room types suitable for your pet:</p>
+                <ul>
+                    <li>Standard Rooms</li>
+                    <li>Deluxe Suites</li>
+                    <li>Luxury Suites</li>
+                </ul>
+            </div>
+        
+            <div id="amenities" class="tabcontent">
+                <h3>Amenities</h3>
+                <p>We provide top-notch amenities for your pet's comfort:</p>
+                <ul>
+                    <li>Play Areas</li>
+                    <li>Grooming Services</li>
+                    <li>Premium Food</li>
+                    <li>24/7 Care</li>
+                    <li>Personalized Services</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        <section class="pet-day-camp">
+            <h2>Pet Day Camp</h2>
+            <div class="collapsible-content">
+                <button class="collapsible-btn">Camp One</button>
+                <div class="content">
+                    <p>Camp One is designed for high-energy activities such as agility training, frisbee sessions, and interactive games. It’s a great place for pets to burn off excess energy and engage in socialization.</p>
+                </div>
+            </div>
+            <div class="collapsible-content">
+                <button class="collapsible-btn">Camp Two</button>
+                <div class="content">
+                    <p>Camp Two offers a more relaxed setting with nature walks, calming exercises, and sensory games. It focuses on mental stimulation and relaxation for pets in a serene environment.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pawesome | Designed by Harwinder</p>
+    </footer>
+
+    <script>
+        // JavaScript for collapsible content
+        const coll = document.querySelectorAll(".collapsible");
+
+        coll.forEach(item => {
+            item.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+        // JavaScript for Tabs
+function openTab(evt, tabName) {
+    const tabContents = document.getElementsByClassName('tabcontent');
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = 'none';
+    }
+
+    const tabLinks = document.getElementsByClassName('tablinks');
+    for (let i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove('active');
+    }
+
+    document.getElementById(tabName).style.display = 'block';
+    evt.currentTarget.classList.add('active');
+}
+const collapsibleButtons = document.querySelectorAll('.collapsible-btn');
+
+collapsibleButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    });
+});
+
+
+      
+    </script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+    
+
+</body>
+</html>

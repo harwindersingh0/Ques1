@@ -1,0 +1,322 @@
+/* Resetting Default Browser Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #945050;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Grooming services */
+.grooming-services {
+    margin-bottom: 40px;
+}
+
+/* Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Tab styles */
+.tab {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.tab button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Tab content styles */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+/* Collapsible set styles */
+.collapsible-set {
+    margin-bottom: 20px;
+}
+
+/* Collapsible button styles */
+.collapsible-btn {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Collapsible content styles */
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Homepage Styles */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.welcome-message {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Posts Styles */
+.blog-posts {
+    padding: 20px;
+}
+
+.blog-posts article {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-posts article h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-posts article p {
+    color: #555;
+}
+
+.blog-posts article ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Pet Services Page Styles */
+.pet-services {
+    padding: 20px;
+}
+
+/* Contact Us Page Styles */
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Resetting Default Browser Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #945050;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+iframe {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    border: none;
+}
